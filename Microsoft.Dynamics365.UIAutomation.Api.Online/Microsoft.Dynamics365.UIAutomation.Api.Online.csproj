@@ -63,6 +63,10 @@
       <Project>{c9748803-f3cb-4531-b313-bc24d4d0bf0c}</Project>
       <Name>Microsoft.Dynamics365.UIAutomation.Browser</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Dynamics365.UIAutomation.Reference\Microsoft.Dynamics365.UIAutomation.Reference.csproj">
+      <Project>{82090bfa-6376-4aea-a5e8-adca1be0b76b}</Project>
+      <Name>Microsoft.Dynamics365.UIAutomation.Reference</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\Microsoft.Dynamics365.UIAutomation.Api.Shared\Microsoft.Dynamics365.UIAutomation.Api.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
