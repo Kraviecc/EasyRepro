@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Microsoft.Dynamics365.UIAutomation.Api.Online</id>
+    <version>1.0.0</version>
+    <authors>Ranger Team, mkrawczyk</authors>
+    <owners>Sii Dynamics 365</owners>
+    <projectUrl>https://github.com/Kraviecc/EasyRepro</projectUrl>
+    <iconUrl>http://pl.sii.eu</iconUrl>
+    <description>Library for Dynamics CRM E2E testing.</description>
+    <releaseNotes>Working initial version for online.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>CRM e2e tests ui test</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="[10.0.3,)" />
+      <dependency id="Selenium.Support" version="[3.8.0,)" />
+      <dependency id="Selenium.WebDriver" version="[3.8.0,)" />
+      <dependency id="Selenium.Chrome.WebDriver" version="[2.35,)" />
+    </dependencies>
+  </metadata>
+</package>
