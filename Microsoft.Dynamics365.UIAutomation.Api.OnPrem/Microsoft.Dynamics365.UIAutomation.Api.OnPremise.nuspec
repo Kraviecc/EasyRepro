@@ -18,4 +18,7 @@
       <dependency id="Selenium.Chrome.WebDriver" version="[2.35,)" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Debug\pl\Microsoft.Dynamics365.UIAutomation.Reference.resources.dll" target="lib\net461\pl\Microsoft.Dynamics365.UIAutomation.Reference.resources.dll" />
+  </files>
 </package>
