@@ -49,7 +49,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
                 var dictionary = new Dictionary<string, IWebElement>();
 
                 var topItem = driver.FindElements(By.ClassName(Elements.CssClass[Reference.Navigation.TopLevelItem])).FirstOrDefault();
-                topItem?.FindElement(By.Name(Elements.Name[Reference.Navigation.HomeTab])).Click();
+                topItem?.FindElement(By.XPath(Elements.Xpath[Reference.Navigation.HomeTab])).Click();
 
               //  driver.ClickWhenAvailable(By.XPath(Elements.Xpath[Reference.Navigation.HomeTab]));
 

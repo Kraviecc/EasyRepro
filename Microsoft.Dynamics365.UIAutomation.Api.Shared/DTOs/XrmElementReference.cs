@@ -61,7 +61,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
             //Navigation
             { "Nav_ActionGroup"       , "id(\"actionGroupControl\")"},
             { "Nav_SubActionGroup"       , "id(\"actionGroupControl\")"},
-            { "Nav_SubActionGroupContainer"       , "id(\"detailActionGroupControl\")"},
+            { "Nav_SubActionGroupContainer"       , "id(\"detailActionGroupControl\") | //div[@class=\"navActionListContainer\"]"},
             { "Nav_GuidedHelp"       , "id(\"TabButtonHelpId\")/a"},
             { "Nav_AdminPortal"       , "id(\"TabAppSwitcherNode\")/a"},
             { "Nav_Settings"       , "id(\"TabButtonSettingsId\")/a"},
@@ -84,6 +84,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
             { "Nav_SearchLabel"       , "id(\"findHintText\")"},
             { "Nav_Search"       , "id(\"search\")"},
             { "Nav_StartSearch"       , "id(\"findCriteriaButton\")"},
+            { "Nav_HomeTab", "//span[@name=\"TabHome\"] | //span[@id=\"TabHome\"]" },
                   
             //Grid
             { "Grid_JumpBar"       , "id(\"crmGrid_JumpBar\")"},
@@ -315,8 +316,6 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
         public static Dictionary<string, string> Name = new Dictionary<string, string>()
         {
             { "Dialog_ReportHeader", "crmDialog" },
-            //Navigation
-            { "Nav_HomeTab", "TabHome" },
         };
     }
 
