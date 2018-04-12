@@ -80,7 +80,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
             { "Nav_Shuffle"       , "id(\"nav-shuffle\")"},
             { "Nav_TabNode"       , "id(\"TabNode_tab0Tab\")"},
             { "Nav_TabSearch"       , "id(\"TabSearch\")"},
-            { "Nav_SearchButton"       , "id(\"SearchNode\")/a"},
+            { "Nav_SearchButton"       , "id(\"SearchNode\")/a | id(\"TabSearch\")"},
             { "Nav_SearchLabel"       , "id(\"findHintText\")"},
             { "Nav_Search"       , "id(\"search\")"},
             { "Nav_StartSearch"       , "id(\"findCriteriaButton\")"},
