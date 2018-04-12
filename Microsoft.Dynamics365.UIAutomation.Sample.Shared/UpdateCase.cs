@@ -24,6 +24,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample
                 xrmBrowser.GuidedHelp.CloseGuidedHelp();
 
                 xrmBrowser.ThinkTime(500);
+                xrmBrowser.PerformanceCenter.IsEnabled = true;
                 xrmBrowser.Navigation.OpenSubArea(Reference.Localization.Sales, Reference.Localization.Accounts);
 
                 xrmBrowser.ThinkTime(3000);

@@ -971,14 +971,24 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
                 if (driver.HasElement(By.Id(field)))
                 {
                     var input = driver.ClickWhenAvailable(By.Id(field));
-
+                    
                     if (input.FindElement(By.ClassName(Elements.CssClass[Reference.SetValue.LookupRenderClass])) == null)
                         throw new InvalidOperationException($"Field: {field} is not lookup");
 
-                    input.FindElement(By.ClassName(Elements.CssClass[Reference.SetValue.LookupRenderClass])).Click();
+                    try
+                    {
+                        input.FindElement(By.ClassName(Elements.CssClass[Reference.SetValue.LookupRenderClass]))
+                            .Click();
+                    }
+                    catch (Exception)
+                    {
+                        // ignored for CRM 16 (8.1.0.x)
+                    }
 
                     var dialogName = $"Dialog_{field}_IMenu";
-                    var dialog = driver.FindElement(By.Id(dialogName));
+                    var oldDialogName = $"Dialog_{field}_i_IMenu";
+                    var dialogNameXPath = "//div[@id=\"" + dialogName + "\"] | //div[@id=\"" + oldDialogName + "\"]";
+                    var dialog = driver.FindElement(By.XPath(dialogNameXPath));
 
                     var dialogItems = OpenDialog(dialog).Value;
 
