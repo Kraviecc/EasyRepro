@@ -70,7 +70,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Reference {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Account name.
+        ///   Looks up a localized string similar to Account Name.
         /// </summary>
         public static string AccountName {
             get {
