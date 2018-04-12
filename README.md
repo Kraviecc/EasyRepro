@@ -10,9 +10,14 @@ Microsoft Visual Studio 2015, Microsoft Visual Studio 2017
 
 ### CRM Versions
 Easy Repro supports below CRM Versions	
+#### Online
 - Microsoft Dynamics® CRM Online 2016 8.1 (8.1.1.x) (DB 8.1.1.x)
-- Microsoft Dynamics 365 Online Version 8.2 (8.2.x) (DB 8.2.x) online
-- Microsoft Dynamics 365 Online Version 9.0 (9.0.x) (DB 9.0.x) online
+- Microsoft Dynamics 365 Online Version 8.2 (8.2.x) (DB 8.2.x)
+- Microsoft Dynamics 365 Online Version 9.0 (9.0.x) (DB 9.0.x)
+##### OnPremise
+- Microsoft Dynamics® CRM 2016 8.1 (8.1.0.x) (DB 8.1.0.x)
+- Microsoft Dynamics 365 Version 8.2 (8.2.x) (DB 8.2.x)
+- Microsoft Dynamics 365 Version 9.0 (9.0.x) (DB 9.0.x)
 
 #### Selenium Webdriver & Support
 Selenium is a set of different software tools each with a different approach to supporting browser automation. These tools are highly flexible, allowing many options for locating and manipulating elements within a browser, and one of its key features is the support for automating multiple browser platforms. This package contains the .NET bindings for the newer, more concise and object-based Selenium WebDriver API, which uses native OS-level events to manipulate the browser, bypassing the JavaScript sandbox, and does not require the Selenium Server to automate the browser.
